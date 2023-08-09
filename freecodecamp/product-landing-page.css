@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata:wght@300&family=Lobster&family=PT+Sans:wght@700&family=Poppins&display=swap');
+
+:root{
+    --gap-links: 5rem;
+    --master-gap-inline: 2.5rem;
+    --input-text-w: 300px;
+} 
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60.2%;
+    min-height: 100vh;
+    background-color: #eee;
+}
+img{
+    width: 100%; height: 100%;
+}
+#master{
+    min-height: 100vh;
+    display: grid;
+    margin-inline: auto;
+    padding-inline: var(--master-gap-inline);
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    padding-inline: calc(1rem + 12px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+}
+
+figure, nav{
+    width: 100%;
+    display: flex; 
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+#nav-bar{
+    justify-content: flex-end;
+    gap: var(--gap-links);
+    flex-wrap: wrap;
+}
+#nav-bar a{
+    color: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+#header-img{
+    object-fit: cover;
+    max-width: 300px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(1rem * 1.4);
+    font-weight: 600;
+}
+.for-form{
+    display: block;
+    width: 100%; text-align: center;
+}
+#form{
+    padding: 2rem .5rem;
+    display: grid; gap: 1rem;
+    place-items: center;
+}
+#form input{
+    padding: .35rem;    
+}
+#form input[type="email"]{
+    width: min(100%, var(--input-text-w));    
+}
+
+input[type="submit"]{
+    width: min(100%, calc(var(--input-text-w) / 1.8));    
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border: none; outline: none;
+    transition: background-color .3s ease-in;
+    line-height: 1.50rem; 
+    letter-spacing: .15rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight: 900;
+    border-radius: 2px;
+}
+
+input[type="submit"]:hover{
+    background-color: orange;
+    transition: .3s ease-in;
+}
+#section-1,
+#section-2,
+#section-3,
+#footer{
+    padding: 2rem .5rem;
+    width: min(100%, 900px);
+}
+#section-1{
+    display: grid;
+    margin-inline: auto;
+    row-gap: 2rem;
+}
+.wrapper{
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: space-around;
+}
+
+.wrapper :is(.for-icons, .for-texts){
+    display: grid;
+    padding: 1rem;
+}
+
+.for-icons{
+    width: min(100%, 10vw);
+    place-items: center;
+    overflow: hidden;
+}
+.for-texts{
+    flex: 1;
+    align-items: center;
+}
+.for-texts h1{
+    font-size: 1.5rem;
+}
+.for-texts p{
+    font-size: 1rem;
+}
+
+.for-icons i{
+    color: darkorange;
+    font-size: 3rem;
+}
+
+#section-2{
+    margin-inline: auto;
+    display: grid;
+    place-items: center;
+}
+#section-2 :where(video, iframe){
+    height: 40vh;
+    width: min(100%, 500px);
+}
+
+#section-3{
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.card{
+    outline: 1px solid #222;
+    border-radius: 1.5px;
+    width: min(100%, 270px);
+    aspect-ratio: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card > *{
+    text-align: center;
+}
+.card > h3{
+    font-size: 1rem;
+    padding-block: .8rem;
+    word-spacing: .15rem;
+    text-transform: uppercase;
+}
+
+.card > h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: .05rem;
+    padding-block: 1rem;
+}
+.card > .price-description{
+    flex: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card > .price-description > p{
+    font-size: .90rem;
+}
+.card > input[type="submit"]{
+    width: calc(40% - 1rem);
+    padding-block: .5rem;
+    margin-inline: auto;
+    font-weight: normal;
+    margin-block: 1rem;
+}
+
+.card > h3, #footer{
+    background-color: #8883;
+}
+
+#footer{
+    margin-top: 1rem;
+    display: block;
+    text-align: right;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+
+#footer > div:first-of-type{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+#footer > div:first-of-type > a{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+#footer > div:last-of-type > p{
+    font-size: .8rem;
+}
+
+@media (max-width: 1000px){
+    :root{
+        --gap-links: 3.5rem;
+    } 
+    #header{
+        flex-direction: row;
+        padding-block: .5rem;
+        justify-content: flex-end;
+    }
+    #header > *{
+        padding-block: 1rem;
+    }
+    #nav-bar{
+        flex-direction: row;
+        align-items: center;
+        padding-inline: 0;
+    }
+}
+@media (max-width: 800px){
+    :root{
+        --gap-links: 1rem;
+    } 
+    #header{
+        flex-direction: column;
+        padding-block: .5rem;
+        width: 100%;
+    }
+    #header > *{
+        padding-block: 1rem;
+    }
+    #header-img{
+        margin-inline: auto;
+    }
+    #nav-bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wrapper .for-icons{
+        display: none;
+    }
+}

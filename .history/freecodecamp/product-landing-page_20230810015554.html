@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="product-landing-page.css">
+    
+    <!-- font-awesome -->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <div id="master">
+
+    <header id="header">
+        <figure>
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="this is a logo" id="header-img">
+        </figure>
+        
+
+        <nav id="nav-bar">
+            <a href="#section-1" class="nav-link">Features</a>
+            <a href="#section-2" class="nav-link">How it works</a>
+            <a href="#section-3" class="nav-link">Pricing</a>
+        </nav>
+    </header>
+
+    <section class="for-form" id="">
+        <form action="https://www.freecodecamp.com/email-submit" id="form" method="post">
+            <h1>Handcrafted, home-made masterpieces</h1>
+            <input type="email" name="email" placeholder="Enter your email address" id="email" pattern=".+@globex\.com" required>
+            <input type="submit" value="Get Started" id="submit" name="submit">
+        </form>
+        <!-- <i class="fa fa-truck"></i>
+        <i class="fa fa-battery-full"></i> -->
+        
+    </section>
+
+    <section id="section-1">
+        <div class="wrapper">
+            <div class="for-icons">
+                <i class="fa fa-fire"></i>
+            </div>
+            <div class="for-texts">
+                    <h1>Premium Materials</h1>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="for-icons">
+                <i class="fa fa-truck"></i>
+            </div>
+            <div class="for-texts">
+                    <h1>Fast Shipping</h1>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="for-icons">
+                <i class="fa fa-battery-full"></i>
+            </div>
+            <div class="for-texts">
+                    <h1>Quality Assurance</h1>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="for-video" id="section-2">
+        <!-- <object data="https://www.youtube.com/watch?v=y8Yv4pnO7qc&t=1s" type="video" id="video"></object> -->
+        <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen id="video"></iframe>
+    </section>
+    
+    <section class="for-cards" id="section-3">
+        <div class="card">
+            <h3>Tenor Trombone</h3>
+            <h2>$600</h2>
+            <div class="price-description">
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum</p>
+            </div>
+            <input type="submit" value="Select">
+        </div>
+        <div class="card">
+            <h3>Bass Trombone</h3>
+            <h2>$900</h2>
+            <div class="price-description">
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum</p>
+            </div>
+            <input type="submit" value="Select">
+        </div>
+        <div class="card">
+            <h3>Valve Trombone</h3>
+            <h2>$1200</h2>
+            <div class="price-description">
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum</p>
+            </div>
+            <input type="submit" value="Select">
+        </div>
+    </section>
+
+    <section class="for-footer" id="footer">
+        <div>
+            <a href="#">privacy</a>
+            <a href="#">terms</a>
+            <a href="#">contact</a>
+        </div>
+        <div>
+            <p>&copy; Copyright 2016, Original Trombones</p>
+        </div>
+    </section>
+    
+    </div>
+</body>
+</html>

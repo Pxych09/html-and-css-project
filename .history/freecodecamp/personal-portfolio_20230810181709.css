@@ -1,23 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata:wght@300&family=Lobster&family=PT+Sans:wght@700&family=Poppins&display=swap');
 
-:root{
-    --color-navbar: #d22b2b;
-    --white: #f2f2f2;
-    --padding: 1rem;
-}
-
 *, ::after, ::before{   
     margin: 0; padding: 0;
     box-sizing: border-box;
 }
 body{
     font-family: "Poppins", sans-serif;
+    background-color: red;
     color: #888;
 }
 
 .master-container{
     min-height: 100vh;
-    padding: var(--padding);
+    background-color: wheat;
 }
 
 a{
@@ -25,34 +20,11 @@ a{
     color: inherit;
 }
 
-#navbar a{
-    height: 100%; 
-    outline: 1px solid skyblue;
-}
-#navbar a:hover{
-    background-color: #5d8bf4;
-}
 #navbar{
     position: sticky;
     top: 0; left: 0;
-    padding: var(--padding) calc(var(--padding) + .75rem);
-    display: flex; flex-wrap: wrap;
-    background-color: var(--color-navbar);
-    color: #fefe;
-    justify-content: flex-end;
-    align-items: center;
-    gap: calc(var(--padding) * 3);
+    padding: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* media query => mobile */
@@ -65,7 +37,9 @@ a{
 }
 /* media query => Laptops */
 @media (max-width: 769px) and (max-width: 1024px){
-    
+    html{
+        background: red;
+    }
 }
 /* media query => Large screens */
 @media (min-width: 1025px){

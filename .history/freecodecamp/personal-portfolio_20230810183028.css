@@ -27,7 +27,6 @@ a{
 
 #navbar a{
     height: 100%; 
-    outline: 1px solid skyblue;
 }
 #navbar a:hover{
     background-color: #5d8bf4;

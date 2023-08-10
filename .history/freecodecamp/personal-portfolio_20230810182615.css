@@ -25,23 +25,16 @@ a{
     color: inherit;
 }
 
-#navbar a{
-    height: 100%; 
-    outline: 1px solid skyblue;
-}
-#navbar a:hover{
-    background-color: #5d8bf4;
-}
 #navbar{
     position: sticky;
     top: 0; left: 0;
-    padding: var(--padding) calc(var(--padding) + .75rem);
+    padding: var(--padding) calc(var(--padding) + 1.5rem);
     display: flex; flex-wrap: wrap;
     background-color: var(--color-navbar);
     color: #fefe;
     justify-content: flex-end;
     align-items: center;
-    gap: calc(var(--padding) * 3);
+    gap: calc(1rem * 3);
 }
 
 

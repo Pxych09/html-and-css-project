@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata:wght@300&family=Lobster&family=PT+Sans:wght@700&family=Poppins&display=swap');
+
+*, ::after, ::before{   
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.master-container{
+    min-height: 100vh;
+}
